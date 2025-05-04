@@ -39,12 +39,12 @@ jobs:
             -archivePath ${{ github.workspace }}/build/BokujoDashCowcome.xcarchive archive
 
       # IPA書き出し用の設定ファイル
-      - name: Export IPA
-        run: |
-          xcodebuild -exportArchive \
-            -archivePath ${{ github.workspace }}/build/BokujoDashCowcome.xcarchive \
-            -exportPath ${{ github.workspace }}/build/ipa \
-            -exportOptionsPlist ExportOptions.plist
+     # - name: Export IPA
+     #   run: |
+     #     xcodebuild -exportArchive \
+     #       -archivePath ${{ github.workspace }}/build/BokujoDashCowcome.xcarchive \
+     #       -exportPath ${{ github.workspace }}/build/ipa \
+     #       -exportOptionsPlist ExportOptions.plist
 
       # Upload ステップはコメントアウト済み
       # - name: Upload IPA Artifact
