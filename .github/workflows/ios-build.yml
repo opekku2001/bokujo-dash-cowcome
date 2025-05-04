@@ -39,8 +39,8 @@ jobs:
             -exportOptionsPlist ExportOptions.plist
 
       # 成果物をアップロード
-      - name: Upload IPA Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: BokujoDashCowcome.ipa
-          path: build/ipa/*.ipa
+      #- name: Upload IPA Artifact
+      #  uses: actions/upload-artifact@v2
+      #  with:
+      #    name: BokujoDashCowcome.ipa
+      #    path: build/ipa/*.ipa
